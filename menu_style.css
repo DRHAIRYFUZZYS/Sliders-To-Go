@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ff6347; /* Sliders To-Go background color */
+}
+
+/* Header Styles */
+header {
+    background-color: #ff6347; /* Sliders To-Go matching color */
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Navigation Styles */
+nav {
+    float: left;
+    width: 30%;
+    background: #666666; /* A suitable gray matching Sliders To-Go aesthetic */
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+/* Article Styles */
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+}
+
+/* Clear Floats After the Columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #666666; /* A suitable gray matching Sliders To-Go aesthetic */
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Flexbox Container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Flexbox Items */
+.flex-item {
+    flex: 1;
+    margin: 10px;
+    min-width: 100px;
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+}
